@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lato:wght@100;300;400;700;900&display=swap');
+/**
+font-family: "Kode Mono", monospace;
+font-family: "Lato", sans-serif;
+
+*/
+
+
+h1{
+    color: pink;
+}
+
+p{
+    color: blue;
+}
+
+/* p{
+    color: violet;
+}
+
+p{
+    color: aquamarine;
+} */
+
+/* las clases en css son con un puntito al inicio de la palabra elegida*/
+
+/*
+las clases se pueden repetir en cualquier parte del codigo
+y cualquier HTML
+
+**/
+
+
+
+.sectionDos{
+    color: #0C359E;
+}
+
+.sectionDos p{
+    color: rgba(45, 107, 87, 0.352);
+    font-family: "Kode Mono", monospace;
+    font-size: 40px;
+}
+
+.sectionDos .parrafoColor{
+    color: rgb(200, 123, 123);
+}
+
+/*es que el id solamente se puede utilizar 1 vez 
+    si no que rompe con la cascada
+*/
+#colorId{
+    color: red;
+}
+
+
+.h1Tienda{
+    color: black;
+    /*propiedades de texto*/
+    text-align:center; 
+    text-decoration: line-through;
+    text-transform:capitalize;
+    text-shadow: -2px -5px 5px rgb(206, 200, 87);
+
+    /*propiedad para fuentes*/
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: normal;
+    background-color: lightblue;
+}
