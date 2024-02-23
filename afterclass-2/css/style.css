@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: #09080D;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px 1.25rem;
+}
+
+/**aca inicia header**/
+.header-back{
+    width: 100%;
+    height: 31.25rem;
+    background-image: url("../assets/img/back-1.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left:4% ;
+
+}
+
+.header-back h1{
+        font-size: 2.5rem;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.623);
+        margin-bottom: 1.25rem;
+}
+
+.header-back button{
+    width: 10%;
+    padding: .3125rem 1.5625rem;
+    background-color: #B69660;
+    border: none;
+    border-radius: .625rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.569);
+}
+
+footer{
+    width: 100%;
+    
+}
+h4{
+    padding-bottom: 20px;
+    border-bottom: 3px solid yellow;
+}
+.footer-about{
+    width: 20%;
+    height: 300px;
+    
+    border-bottom: 2px solid black;
+}
+.footer-download{
+    width: 20%;
+    
+    border-bottom: 2px solid black;
+
+
+}
+.footer-contact{
+    width: 20%;
+    
+    border-bottom: 2px solid black;
+   
+;
+}
