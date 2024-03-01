@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    background-color: lightblue;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns:repeat(4,150px);/*esta propiedad declara las columnas, 12 columnas es lo maximo que podemos declarar**/
+    grid-template-rows:  repeat(4, 100px); /**no hay limites de filas**/
+    grid-template-areas: 
+    "section-2 section-1 section-1 section-1" 
+    "section-2 section-3 .          section-5"
+    "section-2 section-3 section-4 section-5"
+    ". section-3 section-6 section-6"
+    ;
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    /* justify-items: center;
+    align-items: center; */
+}
+
+.section-1{
+    background-color: aquamarine;
+    grid-area: section-1;
+    justify-self: center;
+    align-self: center;
+}
+.section-2 {
+    background-color: rgb(163, 255, 127);
+    grid-area: section-2;
+    position: relative;
+}
+.section-2 img{
+    /**1024 x 720 px **/
+    width: 100%;
+    height: 100%;
+}
+.section-2 h2{
+    position: absolute;
+    color: white;
+    top: 50%;
+}
+.section-3 {
+    background-color: rgb(253, 255, 127);
+    grid-area: section-3;
+}
+.section-4 {
+    background-color: rgb(255, 150, 127);
+    grid-area: section-4;
+}
+.section-5 {
+    background-color: rgb(129, 127, 255);
+    grid-area: section-5;
+}
+.section-6 {
+    background-color: rgb(253, 127, 255);
+    grid-area: section-6;
+}
+
+

@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nuestro proyecto**/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(10, 10, 10);
+    background-color: #8CCAF7;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.navBar{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.navBar li a{
+    text-decoration: none;
+    color: black;
+}
+
+.seccion-principal{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+}
+
+.informacion {
+    width: 500px;
+}
+
+.seccion-principal img{
+    width: 31.25rem;
+}
+
+
+.section-grid{
+    display: grid;
+    width: 80%;
+    height: 700px;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+.messi2{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    order: 1;
+}
+.messi3{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end:5;
+    order: 3;
+}
+.messi4{
+    width: 100%;
+    height: 100%;
+    grid-column: 4 / 8;
+    grid-row: 4/  6 ;
+    order: 2;
+}
+.messi5{
+    grid-column: 4 / 6;
+    grid-row: 4/ 5;
+    color: white;
+    justify-self: right;
+    align-self: center;
+    order: 4;
+    
+}
