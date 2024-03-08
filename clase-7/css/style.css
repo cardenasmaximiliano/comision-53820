@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+.header-index{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.245);
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.38);
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    margin: 0px 10px;
+   
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #3D6AD6;
+    font-size: 1.25rem;
+}
+
+/**
+1- regla, tomarlo con calma.
+2- tienen que ser ordenados.
+
+
+*/
+
+/*inicio section principal index**/
+.section-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-principal div{
+    width: 31.25rem;
+    
+}
+.section-principal div img{
+    width: 100%;
+
+}
+
+.section-galeria{
+    display: grid;
+    width: 100%;
+    height: 50rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img2 img3"
+    "img4 img4 img5 img5"
+    ;
+    gap: .625rem;
+}
+.section-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+.img5 {
+    grid-area: img5;
+}
+
+
+
+
+
+.section-galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width:1024px){
+    .header-index{
+        background-color: black;
+        
+    }
+
+}
+
+@media(max-width:768px){
+    .header-index{
+        justify-content: space-around;
+    }
+    .section-principal{
+        flex-direction: column-reverse;
+    }
+    .section-galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img5"
+        ;
+    }
+
+}
+
+@media(max-width:425px){
+    .header-index{
+        flex-direction: column;
+    }
+   
+    .section-principal div{
+        width: 100%;
+    }
+}
+
+@media (max-width:320px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar li a{
+        font-size: 1.875rem;
+    }
+
+    .section-principal div p{
+        display: none;
+    }
+    .section-galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5fr);
+        height: none;
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        ;
+    }
+}
