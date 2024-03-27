@@ -1,0 +1,7 @@
+@media (max-width:320px){
+    header{
+        @include flex(column, center,center,1.25rem);
+    }
+
+
+}

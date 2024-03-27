@@ -1,0 +1,27 @@
+/*mixins: es la herramienta mas poderosa de sass
+ya que nos permite crear bloques de codigo
+los cuales pueden ser modulares o no.
+
+y nos recuerda, mucho a las funciones de
+un lenguaje de programacion.
+
+*/
+
+@mixin flex($direction, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid($col, $row, $justify, $align, $area){
+
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    justify-content: $justify;
+    align-content: $align;
+    grid-template-areas: $area;
+
+}

@@ -1,0 +1,31 @@
+/**mapas
+conjunto propiedades iguales que podemos agrupar 
+dentro de una coleccion
+
+creacion 
+
+$nombre(
+
+    llave1:valor1,
+    llave2:valor2
+);
+
+para llamarla ponemos donde iria el valor
+
+map-get($nombre, llave)
+
+**/
+$colores:(
+
+    fondo: rgb(7, 7, 7),
+    letras: rgb(247, 255, 8),
+    hover: rgb(251, 0, 255),
+    letrasSecundarias: blue 
+);
+
+$fuentes:(
+
+    titulos: 2.5rem,
+    titulosSecundarios: 2.25rem
+);
+

@@ -1,0 +1,34 @@
+/*partials
+
+base: codigo a nivel general,
+reset. y fuentes en caso de que se trabe de manera local
+
+components: pueden ir componentes especiales como las cards, navbar, bootstrap.
+
+layout: van los partials de nuestros bloques de codigo mas grandes header main footer, section
+
+utilities: van los partials de variables mixins, maps y funciones
+*/
+/**siempre tenemos que llamar a los partial de las utilities**/
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/*base*/
+@import "./base/reset";
+
+/**layout**/
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main-index";
+
+/**components*/
+
+@import "./components/cards";
+
+
+
+/**mediaQ*/
+@import "./layout/mediasQ/media768";
+@import "./layout/mediasQ/media320";

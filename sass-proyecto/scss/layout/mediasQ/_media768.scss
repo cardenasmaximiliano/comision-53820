@@ -1,0 +1,6 @@
+@media (max-width:768px){
+    .section-grid{
+        @include grid (repeat(3,1fr), repeat(2,1fr),center,center,"area1 area1 area1""area2 area2 area2");
+    }
+
+}

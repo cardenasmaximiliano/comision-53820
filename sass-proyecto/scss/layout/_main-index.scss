@@ -1,0 +1,16 @@
+.section-principal{
+    width: 100%;
+    background-color: lightblue;
+    font-size: 1.25rem;
+    padding: 1.875rem;
+}
+
+.section-dos{
+    @extend .section-principal;
+    background-color: red;
+}
+
+.section-tres{
+    @extend .section-dos;
+    padding: .9375rem;
+}

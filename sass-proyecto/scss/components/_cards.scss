@@ -1,0 +1,13 @@
+.card{
+    width: 300px;
+    height: 21.875rem;
+    div{
+        width: 100%;
+        height: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,134 @@
+/*partials
+
+base: codigo a nivel general,
+reset. y fuentes en caso de que se trabe de manera local
+
+components: pueden ir componentes especiales como las cards, navbar, bootstrap.
+
+layout: van los partials de nuestros bloques de codigo mas grandes header main footer, section
+
+utilities: van los partials de variables mixins, maps y funciones
+*/
+/**siempre tenemos que llamar a los partial de las utilities**/
+/*
+una variable es un espacio de memoria reservada,
+la cual va a alojar un tipo de dato,
+y ese dato EN ESTE CASO se puede modificar. 
+tipo de datos en formato valor; 
+**/
+/*varibles*/
+/**mapas
+conjunto propiedades iguales que podemos agrupar 
+dentro de una coleccion
+
+creacion 
+
+$nombre(
+
+    llave1:valor1,
+    llave2:valor2
+);
+
+para llamarla ponemos donde iria el valor
+
+map-get($nombre, llave)
+
+**/
+/*mixins: es la herramienta mas poderosa de sass
+ya que nos permite crear bloques de codigo
+los cuales pueden ser modulares o no.
+
+y nos recuerda, mucho a las funciones de
+un lenguaje de programacion.
+
+*/
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/**layout**/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5625rem;
+  padding: 1.25rem;
+  background-color: #070707; }
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f7ff08; }
+
+/*corresponde a mi barra de navegacion**/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: 1.5625rem;
+  list-style: none;
+  font-size: 1.5rem; }
+
+.navbar li a {
+  text-decoration: none;
+  color: #f7ff08; }
+
+.navbar li a:hover {
+  color: #fb00ff; }
+
+footer {
+  display: flex; }
+  footer div {
+    width: 18.75rem;
+    height: 18.75rem; }
+    footer div:nth-child(1) {
+      background-color: blue; }
+    footer div:nth-child(2) {
+      background-color: red; }
+    footer div:nth-child(3) {
+      background-color: yellow; }
+
+.section-principal, .section-dos, .section-tres {
+  width: 100%;
+  background-color: lightblue;
+  font-size: 1.25rem;
+  padding: 1.875rem; }
+
+.section-dos, .section-tres {
+  background-color: red; }
+
+.section-tres {
+  padding: .9375rem; }
+
+/**components*/
+.card {
+  width: 300px;
+  height: 21.875rem; }
+  .card div {
+    width: 100%;
+    height: 50%; }
+    .card div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+/**mediaQ*/
+@media (max-width: 768px) {
+  .section-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "area1 area1 area1" "area2 area2 area2"; } }
+
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem; } }
